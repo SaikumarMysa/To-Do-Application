@@ -4,7 +4,7 @@ const ToDo = require('./../models/ToDoModel');
 
 //GET TODOs
 
-exports.getToDos  = async(req,res)=>{
+exports.showToDos  = async(req,res)=>{
 
     const toDos = await ToDo.find();
 

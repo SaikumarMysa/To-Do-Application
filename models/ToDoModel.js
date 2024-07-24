@@ -13,5 +13,5 @@ const toDoSchema = new mongoose.Schema({
 {timestamps:true}
 )  
 
-const ToDo = mongoose.model('ToDo',);
+const ToDo = mongoose.model('ToDo', toDoSchema);
 module.exports = ToDo;
