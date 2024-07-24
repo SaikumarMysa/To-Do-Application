@@ -2,7 +2,6 @@ const express = require('express');
 
 const toDoController = require('./../controllers/toDoController');
 
-
 const router = express.Router();
 
 router.get('/todos', toDoController.showToDos);

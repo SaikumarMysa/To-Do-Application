@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 const toDoSchema = new mongoose.Schema({
-    text:{
 
+    text:{
         type: String,
         required: [true,'Enter any text'],
         lowercase: true,
@@ -14,4 +14,5 @@ const toDoSchema = new mongoose.Schema({
 )  
 
 const ToDo = mongoose.model('ToDo', toDoSchema);
+
 module.exports = ToDo;

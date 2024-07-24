@@ -17,6 +17,6 @@ if(process.env.NODE_ENV==='development')
 app.use(express.json());
 
 //routes
-app.use('/api/v1/todos', toDoRouter);
+app.use('/api/v1/', toDoRouter);
 
 module.exports = app;
